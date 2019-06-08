@@ -1,3 +1,3 @@
-# Coursera Leaflet R
+# Coursera Leaflet R example
 
-R Markdown Leaflet example  s
+[Presentation with Leaflet](https://fennekit.github.io/CourseraLeafletR/Leaflet.html)
