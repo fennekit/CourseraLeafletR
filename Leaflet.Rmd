@@ -1,0 +1,24 @@
+---
+title: "Leaflet R assignment"
+author: "Erik Konijnenburg"
+date: "6/8/2019"
+output: ioslides_presentation
+
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Leaflet map 
+
+```{r}
+library(leaflet)
+
+mymap <- leaflet() %>%
+  addTiles() %>%
+  addMarkers(lng=4.5231, lat=51.8939, popup="Hand in hand kameraden")    
+
+mymap
+```
+
