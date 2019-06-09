@@ -25,9 +25,10 @@ c <- runif(n, 0, 255)
  
 data <-data.frame(x, y, z, r, c)
  
-plot_ly(data, x = ~x, y = ~y, z = ~z, color = ~c, size
- = ~r, marker = list(symbol = 'circle', sizemode = 'diameter'),
- type="scatter3d", mode="markers")
+p <- plot_ly(data, x = ~x, y = ~y, z = ~z, color = ~c, size = ~r, marker = list(symbol = 'circle', sizemode = 'diameter'),
+ type="scatter3d", mode="markers") %>% 
+    layout(title = 'Random points, size, color')
 
+p
 ```
 
