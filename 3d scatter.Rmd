@@ -1,0 +1,33 @@
+---
+title: "Plot.ly assignment"
+author: "Erik Konijnenburg"
+date: "6/9/2019"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Plotly 3D plot
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+library("plotly")
+n <- 25;
+ 
+x <- runif(n , 0, 100)
+y <- runif(n , 0, 100)
+
+z <- runif(n , 0, 100)
+ 
+r <- runif(n, 2, 50)
+c <- runif(n, 0, 255)
+ 
+data <-data.frame(x, y, z, r, c)
+ 
+plot_ly(data, x = ~x, y = ~y, z = ~z, color = ~c, size
+ = ~r, marker = list(symbol = 'circle', sizemode = 'diameter'),
+ type="scatter3d", mode="markers")
+
+```
+
